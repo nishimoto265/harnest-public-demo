@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+    {
+        "hooks": [
+          {
+            "command": "sh .harnest/hooks/verify-checklist-result.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ],
+        "id": "harnest.checklist-gate"
+      }
+    ]
+  }
+}

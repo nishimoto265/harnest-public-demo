@@ -1,0 +1,21 @@
+<!-- BEGIN HARNEST CHECKLIST -->
+## HarNest Checklist
+
+Before implementation, read @.harnest/checklist.md.
+
+At the start of work, run:
+
+HARNEST_BIN="${HARNEST_BIN:-harnest}"
+"$HARNEST_BIN" lessons prepare-checklist-result --force
+
+Before creating a PR, update .harnest/work/checklist-result.md:
+
+- [x] means compliant
+- [-] means not applicable
+- [!] means valid exception and requires an indented reason:
+
+Then run:
+
+HARNEST_BIN="${HARNEST_BIN:-harnest}"
+"$HARNEST_BIN" lessons verify-checklist-result
+<!-- END HARNEST CHECKLIST -->
