@@ -12,4 +12,5 @@ GitHub repository and a real merged pull request.
   card class convention.
 - Fallback and notification copy should explain what is unavailable and what
   the user can do next.
-
+- Trial and usage health components should expose explicit states for active,
+  warning, and blocked flows.
