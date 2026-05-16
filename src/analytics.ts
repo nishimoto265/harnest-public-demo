@@ -3,7 +3,9 @@ export const analyticsEvents = {
   planCardChoose: "plan_card_choose",
   accountSummaryView: "account_summary_view",
   renewalReminderView: "renewal_reminder_view",
-  renewalReminderManage: "renewal_reminder_manage"
+  renewalReminderManage: "renewal_reminder_manage",
+  paymentFailureView: "payment_failure_view",
+  paymentFailureUpdateMethod: "payment_failure_update_method"
 } as const;
 
 export type AnalyticsEvent = (typeof analyticsEvents)[keyof typeof analyticsEvents];
