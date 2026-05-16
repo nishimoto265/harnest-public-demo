@@ -5,7 +5,12 @@ export const analyticsEvents = {
   renewalReminderView: "renewal_reminder_view",
   renewalReminderManage: "renewal_reminder_manage",
   paymentFailureView: "payment_failure_view",
-  paymentFailureUpdateMethod: "payment_failure_update_method"
+  paymentFailureUpdateMethod: "payment_failure_update_method",
+  trialHealthView: "trial_health_view",
+  trialHealthExtendTrial: "trial_health_extend_trial",
+  trialHealthContactSupport: "trial_health_contact_support",
+  usageLimitView: "usage_limit_view",
+  usageLimitUpgrade: "usage_limit_upgrade"
 } as const;
 
 export type AnalyticsEvent = (typeof analyticsEvents)[keyof typeof analyticsEvents];
